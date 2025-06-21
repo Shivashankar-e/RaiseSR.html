@@ -8,60 +8,105 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 
   <style>
-    body { 
-    background-image: url('https://i.postimg.cc/nhshLyzT/Service.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: auto;
-    height: auto;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-}
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-image: url('https://i.postimg.cc/nhshLyzT/Service.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+    }
 
     h2 {
-        color: white;
-        font-weight: bold;
-        font-size: 28px;
-        margin: 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      margin: 20px 20px 10px 20px;
     }
 
     ul {
-        margin-top: 80px;
-        margin-left: 20px;
-        padding: 0;
+      margin: 10px 20px;
+      padding-left: 0;
+      list-style-type: none;
     }
 
     li {
-        list-style: none;
-        margin: 20px 0;
+      margin: 10px 0;
     }
 
-    a {
-        color: #ffffff;
-        font-size: 20px;
-        text-decoration: none;
-        padding: 10px 20px;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
+    li a {
+      color: #ffffff;
+      font-size: 14px;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+      display: inline-block;
+      padding: 6px 14px;
+      font-family: Arial, sans-serif;
     }
 
-    a:hover {
-        background: rgba(255, 255, 255, 0.2);
+    li a:hover {
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    footer {
+      text-align: center;
+      margin-bottom: 10px; /* optional spacing from bottom */
+      padding: 0; /* no padding */
+    }
+
+    footer a {
+      margin: 0 8px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #ffffff;
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      padding: 6px 14px;
+      font-family: Arial, sans-serif;
+      display: inline-block;
+    }
+
+    footer a:hover {
+      background: rgba(255, 255, 255, 0.2);
     }
   </style>
 </head>
 
 <body>
-  <h2>Raise Service Ticket</h2>
+  <div class="content">
+    <h2>Raise Service Ticket</h2>
 
-  <ul>
-    <li><a href="https://ap.sprw.ai/stt-wXmiB" target="_blank">RENTAL</a></li>
-    <li><a href="https://ap.sprw.ai/stt-rSWSP" target="_blank">UNLMTD</a></li>
-    <li><a href="https://ap.sprw.ai/stt-Sb7mt" target="_blank">BUY</a></li>
-  </ul>
+    <ul>
+      <li><a href="https://ap.sprw.ai/stt-wXmiB" target="_blank">RENTAL</a></li>
+      <li><a href="https://ap.sprw.ai/stt-rSWSP" target="_blank">UNLMTD</a></li>
+      <li><a href="https://ap.sprw.ai/stt-Sb7mt" target="_blank">BUY</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    <a href="https://docs.google.com/spreadsheets/d/1J9Zy22euuHHh8LJjnXkW6ugj0mgdlKmFqIB6mvjt2N0/edit" target="_blank">SR Status</a>
+    <a href="https://docs.google.com/spreadsheets/d/1Nya2BX_pATWa4bH15Urvq2WxEoH2JBtVNffOJ_lOoYI/edit" target="_blank">BLR</a>
+    <a href="https://docs.google.com/spreadsheets/d/1mVzsusQWOBPXHPMZzVFbMO4Hvly5Wl5V2e6WJHh5_ws/edit" target="_blank">MUM</a>
+    <a href="https://docs.google.com/spreadsheets/d/10zaPcsd60vuVQmMquMQZ4QYbI8nAW_9V1NdAYYE3VRA/edit" target="_blank">NCR</a>
+    <a href="https://docs.google.com/spreadsheets/d/1Q5l178rSAE1wDStyixGvBI1F6NOoMc2mNhn_CdVgwLM/edit" target="_blank">HYD</a>
+    <a href="https://docs.google.com/spreadsheets/d/1BKLPBlP7ziDFwYzSLNqrBGO1cZTBuuxEEurq6nT2fO8/edit" target="_blank">PUN</a>
+    <a href="https://docs.google.com/spreadsheets/d/1UCYMUUTH5IBqC_z8N_eSAcocUWy7cQR0FuLTeEaVU5M/edit" target="_blank">CHN</a>
+    <a href="https://docs.google.com/spreadsheets/d/1AlzYV6-UdD4ko5WxxPtmIylSGARz6IezGZGX0PSnYIk/edit" target="_blank">Haier</a>
+    <a href="https://docs.google.com/spreadsheets/d/1LwxgxLCibs1xWGFOcQSiIx5x4j18y9Aq-fHiF_Rw0PA/edit" target="_blank">FUR X</a>
+    <a href="https://docs.google.com/spreadsheets/d/1v-GORXCR-ae9xPn4SnBRoaqUO-1-NcXvmkWr1l3_29A/edit" target="_blank">Drinkprime</a>
+  </footer>
 </body>
 </html>
